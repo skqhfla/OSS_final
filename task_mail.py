@@ -30,7 +30,7 @@ def mailfunc(code,c_num,mail):
         sleep(rand)
 
         try:
-            global res = urllib.request.urlopen(req).read()
+            res = urllib.request.urlopen(req).read()
 
         except HTTPError:
             HTTPError_num = HTTPError_num + 1
