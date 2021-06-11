@@ -29,8 +29,10 @@ def post():
     code = request.form['subject_code']
     c_num = request.form['c_num']
     mail = request.form['mail']
+    year = request.form['year']
+    semester = request.form['semester']
 
-    thread = Thread(target=mailfunc, args=(code,c_num,mail,))
+    thread = Thread(target=mailfunc, args=(year,semester,code,c_num,mail,))
     thread.daemon = True
     thread.start()
     return render_template("mainpage.html")
