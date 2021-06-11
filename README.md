@@ -24,8 +24,10 @@ $ sudo pip install -r requirements.txt
 $ python3 server.py
 ```
 
-3. Connect to Web\n
+3. Connect to Web and use it!\n
 ```
 type 'raspberry ip address' + 'port number 5000(default)' in your browser
 ex) 192.168.0.65:5000
 ```
+
+* you need to type '분반' like 01, 02... not 1, 2
