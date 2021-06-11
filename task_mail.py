@@ -62,7 +62,7 @@ def mailfunc(code,c_num,mail):
 
         now = datetime.datetime.now()
 
-        if current_people < total_people:
+        if int(current_people) < int(total_people):
 
             s = smtplib.SMTP('smtp.gmail.com', 587)
             s.ehlo()
