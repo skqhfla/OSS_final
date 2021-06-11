@@ -67,7 +67,7 @@ def mailfunc(code,c_num,mail):
             s = smtplib.SMTP('smtp.gmail.com', 587)
             s.ehlo()
             s.starttls()
-            s.login('huiwon.hope@gmail.com', 'xixqxtaubeemriaj')
+            s.login('handong.sugang.helper@gmail.com', 'qgellbsykmrlcbdr')
 
             msg = MIMEText(str(subject_name)+'과목 수강신청 가능합니다')
             msg['Subject'] = (str(subject_name) +'과목 수강신청 가능합니다')
