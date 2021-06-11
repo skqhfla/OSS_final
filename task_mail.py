@@ -30,6 +30,7 @@ def mailfunc(code,c_num,mail):
         sleep(rand)
 
         try:
+            global res
             res = urllib.request.urlopen(req).read()
 
         except HTTPError:
