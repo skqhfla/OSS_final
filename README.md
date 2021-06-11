@@ -26,7 +26,7 @@ $ sudo pip install -r requirements.txt
 $ python3 server.py
 ```
 
-3. Connect to Web and use it!\n
+3. Connect to Web and use it!
 ```
 type 'raspberry ip address' + 'port number 5000(default)' in your browser
 ex) 192.168.0.65:5000
