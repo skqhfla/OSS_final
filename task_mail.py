@@ -11,13 +11,13 @@ import random
 from urllib.request import HTTPError
 from urllib.request import URLError
 
-def mailfunc(code,c_num,mail):
+def mailfunc(year,semester,code,c_num,mail):
     HTTPError_num = 0
     URLError_num = 0
     current_people = 0
     total_people = 0
 
-    url = "https://hisnet.handong.edu/for_student/sugang/PLES230M.php?hak_year=2021&hak_term=1&hakbu=%C0%FC%C3%BC&isugbn=%C0%FC%C3%BC&injung=%C0%FC%C3%BC&eng=%C0%FC%C3%BC&prof_name=&gwamok=&gwamok_code="+code+"&ksearch=search"
+    url = "https://hisnet.handong.edu/for_student/sugang/PLES230M.php?hak_year="+year+"&hak_term="+semester+"&hakbu=%C0%FC%C3%BC&isugbn=%C0%FC%C3%BC&injung=%C0%FC%C3%BC&eng=%C0%FC%C3%BC&prof_name=&gwamok=&gwamok_code="+code+"&ksearch=search"
 
     executable = sys.executable
     args = sys.argv[:]
