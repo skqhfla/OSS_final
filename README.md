@@ -4,7 +4,7 @@
 
 ## What does this project do?
 This project is designed to help you register for class.\
-If there is a vacancy in the class, you can receive a notification via email. \n
+If there is a vacancy in the class, you can receive a notification via email.
 
 ## Structure & Process
 A simple web server was implemented through an open-source web framework, "Flask", and the web was used to receive the necessary information from the user.
