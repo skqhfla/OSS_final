@@ -16,6 +16,8 @@ If you enter information about the class you want to enroll in via the web, the 
 1. To install the required Python package, run the command below.
 ```
 $ sudo apt-get update
+```
+```
 $ sudo pip install -r requirements.txt
 ```
 
