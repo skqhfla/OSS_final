@@ -33,3 +33,7 @@ ex) 192.168.0.65:5000
 ```
 
 * you need to type '분반' like 01, 02... not 1, 2
+
+## Web image
+![image](https://user-images.githubusercontent.com/61661237/121774548-deabf180-cbbd-11eb-8817-45f800f8f30c.png)
+
