@@ -20,7 +20,7 @@ $ sudo apt-get update
 ```
 $ sudo pip install -r requirements.txt
 ```
-2. type gmail ID and App PW (How to make App PassWord? -> https://yeolco.tistory.com/93)
+2. type gmail ID and App PW in task_mail.py file (How to make App PassWord? -> https://yeolco.tistory.com/93)
 ```
 s.login('gmail ID', 'App PW')
 ```
