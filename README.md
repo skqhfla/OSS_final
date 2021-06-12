@@ -20,13 +20,16 @@ $ sudo apt-get update
 ```
 $ sudo pip install -r requirements.txt
 ```
-
-2. Run server.py file
+2. type gmail ID and App PW (How to make App PassWord? -> https://yeolco.tistory.com/93)
+```
+s.login('gmail ID', 'App PW')
+```
+3. Run server.py file
 ```
 $ python3 server.py
 ```
 
-3. Connect to Web and use it!
+4. Connect to Web and use it!
 ```
 type 'raspberry ip address' + 'port number 5000(default)' in your browser
 ex) 192.168.0.65:5000
