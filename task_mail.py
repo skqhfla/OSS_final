@@ -11,8 +11,6 @@ import random
 from urllib.request import HTTPError
 from urllib.request import URLError
 
-global res
-
 def mailfunc(year,semester,code,c_num,mail):
     HTTPError_num = 0
     URLError_num = 0
@@ -69,7 +67,7 @@ def mailfunc(year,semester,code,c_num,mail):
             s = smtplib.SMTP('smtp.gmail.com', 587)
             s.ehlo()
             s.starttls()
-            s.login('handong.sugang.helper@gmail.com', 'qgellbsykmrlcbdr')
+            s.login('huiwon.hope@gmail.com', 'xixqxtaubeemriaj')
 
             msg = MIMEText(str(subject_name)+'과목 수강신청 가능합니다')
             msg['Subject'] = (str(subject_name) +'과목 수강신청 가능합니다')
