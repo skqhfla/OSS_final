@@ -27,11 +27,12 @@ def mailfunc(year,semester,code,c_num,mail):
     req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
 
     while(True):
-        global res
+        
         rand = random.randrange(2,8)
         sleep(rand)
 
         try:
+            global res
             res = urllib.request.urlopen(req).read()
 
         except HTTPError:
