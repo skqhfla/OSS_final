@@ -27,6 +27,7 @@ def mailfunc(year,semester,code,c_num,mail):
     req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
 
     while(True):
+        global res
         rand = random.randrange(2,8)
         sleep(rand)
 
@@ -40,7 +41,7 @@ def mailfunc(year,semester,code,c_num,mail):
         except URLError:
             URLError_num = URLError_num + 1
             pass
-        global res
+        
         soup = BeautifulSoup(res,'html.parser')
         keywords = str(soup.find_all('td', {'align': 'center'}))
         keywords = re.sub('<.+?>', '', keywords, 0).strip()
