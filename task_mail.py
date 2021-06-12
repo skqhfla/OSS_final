@@ -11,6 +11,8 @@ import random
 from urllib.request import HTTPError
 from urllib.request import URLError
 
+global res
+
 def mailfunc(year,semester,code,c_num,mail):
     HTTPError_num = 0
     URLError_num = 0
@@ -30,7 +32,6 @@ def mailfunc(year,semester,code,c_num,mail):
         sleep(rand)
 
         try:
-            global res
             res = urllib.request.urlopen(req).read()
 
         except HTTPError:
