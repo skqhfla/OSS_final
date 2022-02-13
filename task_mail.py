@@ -39,10 +39,12 @@ def mailfunc(year,semester,code,c_num,mail):
 
         except HTTPError:
             HTTPError_num = HTTPError_num + 1
+            print(HTTPError_num)
             pass
 
         except URLError:
             URLError_num = URLError_num + 1
+            print(URLError_num)
             pass
         
         soup = BeautifulSoup(res,'html.parser')
