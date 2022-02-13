@@ -25,6 +25,7 @@ def mailfunc(year,semester,code,c_num,mail):
     args.insert(0, sys.executable)
 
     req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+    print(req)
 
     while(True):
         
@@ -34,6 +35,7 @@ def mailfunc(year,semester,code,c_num,mail):
         try:
             global res
             res = urllib.request.urlopen(req).read()
+            print(res)
 
         except HTTPError:
             HTTPError_num = HTTPError_num + 1
@@ -70,7 +72,7 @@ def mailfunc(year,semester,code,c_num,mail):
             s = smtplib.SMTP('smtp.gmail.com', 587)
             s.ehlo()
             s.starttls()
-            s.login('gmail ID', 'App PW')
+            s.login('skqhflaskqhfla@gmail.com', 'lyrcbvmfhktkavkq')
 
             msg = MIMEText(str(subject_name)+'과목 수강신청 가능합니다')
             msg['Subject'] = (str(subject_name) +'과목 수강신청 가능합니다')
