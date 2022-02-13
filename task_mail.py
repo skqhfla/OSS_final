@@ -8,8 +8,8 @@ import smtplib
 from email.mime.text import MIMEText
 from time import sleep
 import random
-from urllib.request import HTTPError
-from urllib.request import URLError
+from urllib.error import HTTPError
+from urllib.error import URLError
 
 def mailfunc(year,semester,code,c_num,mail):
 
